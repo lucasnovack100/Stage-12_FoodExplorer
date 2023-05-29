@@ -4,17 +4,25 @@ import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
 import { Link } from "react-router-dom";
 
-import { FiMail, FiLock } from "react-icons/fi";
+import { FiMail, FiLock, FiUser } from "react-icons/fi";
 
 
 
 
-export function SignIn() {
+export function SignUp() {
 
   return(
     <Container>
-      <h1>Food Explorerrrrrr</h1>
       <Form>
+        <h1>Food Explorerrrrrr</h1>
+
+        <p>Seu Nome</p>
+        <Input 
+        type="text" 
+        placeholder="Maria da Silva" 
+        icon={FiUser}
+        />
+
       <p>Email</p>
         <Input 
         type="email" 
@@ -30,10 +38,10 @@ export function SignIn() {
         />
 
         <Button
-        title="Entrar"
+        title="Criar Conta"
         />
 
-        <a href="/#">Criar uma conta</a>
+        <a href="/#">Já tenho uma conta</a>
 
       </Form>
     </Container>

@@ -1,37 +1,32 @@
 import styled from "styled-components"
-import { mediaQueries } from "../../components/mediaQueries";
+
+import polygon from "../../assets/Polygon 1.png";
 
 export const Container = styled.div`
 height: 100vh;
 display: flex;
 justify-content: center;
-align-items: center;
 
 margin-top: 158px;
 
 
+`
+
+export const Form = styled.form`
+
 > h1 {
-  display: flex;
   font-family: 'Roboto';
   font-weight: 700;
   line-height: 44px;
   color: ${({ theme }) => theme.COLORS.LIGHT_100};
 
   margin-bottom: 73px;
-
-  
 }
 
-${mediaQueries("md")`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  
-`}
-
-`;
-export const Form = styled.form`
+> img {
+  position: relative;
+  background: transparent;
+}
 
 > p {
   font-family: 'Roboto';
@@ -55,13 +50,5 @@ export const Form = styled.form`
   color: ${({ theme }) => theme.COLORS.LIGHT_100};
 }
 
-${mediaQueries("md")`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  background-color: ${({ theme }) => theme.COLORS.TOMATO_100};
-  border: 2px solid blue
-`}
-//Forma que está atualmente é que quando fica assim ta aplicando ao mobile ao inves do desktop
 `
+

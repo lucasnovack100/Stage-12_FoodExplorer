@@ -13,16 +13,19 @@ margin-bottom: 32px;
 border-radius: 8px;
 
 > input {
-  width: 100%;
   height: 48px;
+  width: 100%;
 
   padding: 12px;
 
   color: ${({theme}) => theme.COLORS.LIGHT_100};//text
   background: transparent;//text
   border: 0;//text
-}
 
+  &:placeholder {
+    color: ${({theme}) => theme.COLORS.LIGHT_100};
+  }
+}
 > svg {
   margin-left: 16px;
 }

@@ -9,7 +9,8 @@ export default createGlobalStyle`
 }
 
 :root{
-  font-size: 100%;
+  font-size: 62.5%;
+  --fs-body: 1.6rem;
 
 }
 

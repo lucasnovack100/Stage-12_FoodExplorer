@@ -8,7 +8,6 @@ color: ${({ theme }) => theme.COLORS.LIGHT_100};
 height: 48px;
 border: 0;
 padding: 12px 0;
-margin-top: 16px;
 border-radius: 5px;
 font-weight: 500;
 
