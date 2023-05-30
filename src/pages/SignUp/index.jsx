@@ -3,20 +3,18 @@ import { Container, Form } from "./styles";
 import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
 import { Link } from "react-router-dom";
-
 import { FiMail, FiLock, FiUser } from "react-icons/fi";
-
-
 
 
 export function SignUp() {
 
   return(
     <Container>
-      <Form>
-        <h1>Food Explorerrrrrr</h1>
+      
+      <h1><img src="../../../src/assets/Polygon 1.png" alt="" /> Food Explorer</h1>
 
-        <p>Seu Nome</p>
+      <Form>
+      <p>Nome Completo</p>
         <Input 
         type="text" 
         placeholder="Maria da Silva" 
@@ -38,10 +36,10 @@ export function SignUp() {
         />
 
         <Button
-        title="Criar Conta"
+        title="Criar conta"
         />
 
-        <a href="/#">Já tenho uma conta</a>
+        <a href="/#">já tenho uma conta</a>
 
       </Form>
     </Container>

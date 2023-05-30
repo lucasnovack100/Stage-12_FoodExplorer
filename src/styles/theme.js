@@ -36,9 +36,14 @@ export default {
 
     CAKE_100: "#065E7C",
   }
+};
 
-  /*
+
+
+
+//${({ theme}) => theme.FONTS.body};
+
+/*
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
-}
