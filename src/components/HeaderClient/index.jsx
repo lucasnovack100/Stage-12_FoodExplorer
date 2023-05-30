@@ -1,13 +1,7 @@
 import { Container, Receipt, Menu } from "./styles";
-import { RiShutDownLine } from "react-icons/ri";
-
-import { ButtonImg } from "../../components/ButtonImg";
 
 export function HeaderClient(){
 
-
-
-    
     return(
         <Container>
         

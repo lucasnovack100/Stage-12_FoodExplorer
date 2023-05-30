@@ -8,6 +8,17 @@ export const Container = styled.div`
   grid-template-rows: 105px auto;
   grid-template-areas: 
   "header"
-  "content";
+  "content"
+  "footer"
 
+
+  `;
+
+  export const Content = styled.div`
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
   `;
