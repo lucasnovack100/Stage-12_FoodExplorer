@@ -1,13 +1,15 @@
-import styled from "styled-components"
+import styled, {css} from "styled-components"
 import { mediaQueries } from "../../components/mediaQueries";
+
 
 export const Container = styled.div`
 height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
 
-margin-top: 158px;
+  margin-top: 158px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 
 
 > h1 {
@@ -18,27 +20,40 @@ margin-top: 158px;
   color: ${({ theme }) => theme.COLORS.LIGHT_100};
 
   margin-bottom: 73px;
-
+  gap: 11px
   
 }
 
-${mediaQueries("md")`
+@media (min-width: 770px){
+
+  margin-top: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  
-`}
+
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  > h1{
+    gap: 19px;
+  }
+}
 
 `;
 export const Form = styled.form`
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+
 
 > p {
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 16px;
-
   margin-bottom: 8px;
+  left: 0;
 
   color: ${({ theme }) => theme.COLORS.LIGHT_400};
 }
@@ -55,13 +70,13 @@ export const Form = styled.form`
   color: ${({ theme }) => theme.COLORS.LIGHT_100};
 }
 
-${mediaQueries("md")`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  background-color: ${({ theme }) => theme.COLORS.TOMATO_100};
-  border: 2px solid blue
-`}
-//Forma que está atualmente é que quando fica assim ta aplicando ao mobile ao inves do desktop
+
+@media (min-width: 770px){
+
+  padding: 64px;
+  border-radius: 16px;
+  border: none;
+  background: ${({ theme }) => theme.COLORS.DARK_700};
+
+}
 `

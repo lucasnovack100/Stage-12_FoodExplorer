@@ -1,9 +1,9 @@
 export const breakPoints = {
   sm: 425,
-  md: 768,
-  lg: 1024,
+  md: 770,
+  lg: 1025,
 }
 
 export const mediaQueries = (key) => {
-  return (style) => `@media (max-width: ${breakPoints[key]}px) {${style}}`;
+  return (style) => `@media (min-width: ${breakPoints[key]}px) {${style}}`;
 }

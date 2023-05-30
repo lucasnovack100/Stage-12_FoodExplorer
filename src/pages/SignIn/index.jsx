@@ -13,7 +13,7 @@ export function SignIn() {
 
   return(
     <Container>
-      <h1>Food Explorerrrrrr</h1>
+      <h1><img src="../../../src/assets/Polygon 1.png" alt="" /> Food Explorer</h1>
       <Form>
       <p>Email</p>
         <Input 
