@@ -30,6 +30,8 @@ export const Container = styled.header`
 export const Menu = styled.ul`
   border: none;
   background: none;
+
+  cursor: pointer;
 `
 
 export const Receipt = styled.button`

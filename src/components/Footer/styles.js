@@ -12,16 +12,14 @@ export const Container = styled.footer`
   justify-content: space-between;
   align-items: center;
 
-  padding: 0 clamp(2.7rem, 7rem + 6vw, 4.85rem);
+  margin-top: auto;
+  padding: 0 clamp(2.7rem, 1rem + 4vw, 4.85rem);
 
 > h1{
   display: flex;
   align-items: center;
   font-size: 1.6rem;
   //font-size: clamp(1.6rem, 0.9rem + 1.3vw, 2.4rem);
-
-  
-
   img{ 
     width: 2.2rem;
     height: 1.8rem;
@@ -39,14 +37,12 @@ label {
   padding: 0 clamp(4.85rem, 4rem + 6vw, 12.3rem);
 
 >h1{
-  //font-size: clamp(1.6rem, 0.9rem + 1.3vw, 2.4rem);
   font-size: 2.4rem;
 
   img{ 
     width: 3.0rem;
     height: 3.0rem;
     margin-right: 1.0rem;
-    
   }
 }
 
