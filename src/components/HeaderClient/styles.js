@@ -38,5 +38,31 @@ export const Receipt = styled.button`
   border: none;
   background: none;
   display: flex;
+
+  position: relative;
+
+  .receipt_status{
+    background-color: ${({ theme }) => theme.COLORS.TOMATO_100};
+    color: ${({ theme }) => theme.COLORS.LIGHT_100};
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: -9px;
+    right: -9px;
+
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
 `
 

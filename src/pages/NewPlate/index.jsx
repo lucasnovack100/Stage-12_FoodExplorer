@@ -11,6 +11,10 @@ import { InputAdmin } from "../../components/InputAdmin";
 import { Section } from "../../components/Section";
 import { ButtonTextBack } from "../../components/ButtonTextBack";
 import { Button } from "../../components/Button";
+import { InputImagePlate } from "../../components/InputImagePlate";
+
+
+import { SelectTypeOfFood } from "../../components/SelectTypeOfFood";
 
 export function NewPlate() {
 
@@ -21,17 +25,19 @@ export function NewPlate() {
 
           <ButtonTextBack
           imgSrc={"../../../src/assets/Icons/CaretLeft.png"}
+          alt="Seta a esquerda"
           title="Voltar"
           />
 
           <h2>Novo Prato</h2>
-          <Section
-          title="Imagem do prato"
-          >
-          <InputAdmin
-          placeholder="Selecione uma imagem"
-          />
-          </Section>
+          
+              <Section
+              title="Imagem do prato"
+              >
+              <InputImagePlate
+              
+              />
+              </Section>
 
           <Section
           title="Nome"
@@ -44,9 +50,7 @@ export function NewPlate() {
           <Section
           title="Categoria"
           >
-          <InputAdmin
-          placeholder="Ex.: Salada Ceasar"
-          />
+          <SelectTypeOfFood/>
           </Section>
 
           <Section

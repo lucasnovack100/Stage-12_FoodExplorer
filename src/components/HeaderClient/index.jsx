@@ -25,6 +25,7 @@ export function HeaderClient(){
         <h1><img src="../../../src/assets/Polygon 1.png" alt="" /> Food Explorer</h1>
             <Receipt>
                 <img src="../../../src/assets/Icons/Receipt.png" alt="" />
+                <span className="receipt_status">0</span>
             </Receipt>
         </Container>
     );

@@ -4,8 +4,8 @@ export function ButtonWithImage({ title, imgSrc, alt, isActive = false, ...rest}
   return(
     <Container 
     type="button"
-    imgSrc
-    alt
+    imgSrc={imgSrc}
+    alt={alt}
     isActive={isActive} 
     {...rest}
     >

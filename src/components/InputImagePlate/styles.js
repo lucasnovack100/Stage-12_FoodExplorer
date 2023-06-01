@@ -18,7 +18,7 @@ border-radius: 0.8rem;
 
   padding: 1.2rem 1.4rem;
 
-  color: ${({theme}) => theme.COLORS.LIGHT_100};//text
+  //color: ${({theme}) => theme.COLORS.LIGHT_100};//text
   background: transparent;//text
   border: 0;//text
 
